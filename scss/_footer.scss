@@ -1,0 +1,67 @@
+footer{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    &.footer{
+        grid-area: footer;
+        .footerNav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0px 20px 0px;
+            border-top: #D2D5DA solid 2px;
+            .logoVariant2{
+                width: 100px;
+                margin-right: 40px;
+                height: auto;
+            }
+            .navDesktop{
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    li{
+                        text-decoration-line: none;
+                        font-family: 'Epilogue', sans-serif;
+                        font-variant: small-caps;
+                        letter-spacing: 1px;
+                        padding: 10px 8px 10px 8px;
+                        transition: all 0.5s;
+                        animation-timing-function: ease;
+                        &:hover{
+                            font-weight: 900;
+                            line-height: 1;
+                            background-color: white;
+                            border-radius: 10px;
+                            box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.10);
+                            transition: all 0.5s;
+                            animation-timing-function: ease-in-out;
+                            animation-duration: 1s;
+                        }
+                        a{
+                            color: #4B6D85;
+                            &:focus{
+                                font-family: 'Epilogue', sans-serif;
+                                font-size: 20px;
+                                font-weight: 800;
+                                color: #4B6D85;
+                            }
+                            &:active{
+                                color: #4B6D85;
+                                font-weight: 1000;
+                            }   
+                        }
+                        
+                    }
+            }
+        }
+    }
+    .footerRedes{
+        display: flex;
+        justify-content: space-between;
+        width: 148px;
+    }
+    .footerCopyright{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
