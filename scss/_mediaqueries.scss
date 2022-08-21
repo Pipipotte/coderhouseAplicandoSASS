@@ -1,0 +1,199 @@
+/********************************************
+EMPIEZA EL MEDIA QUERIES DE INDEX
+*********************************************/
+@media screen and (min-width:1024px){
+    .header>.logoVariant2{
+        display: none;
+    }
+    .navMobile{
+        display: none;
+    }
+    .carruselGifMobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .bienvenidaDesc>h3{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width:1023px){
+        .gridIndex{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas: 
+            "header"
+            "bienvenida"
+            "carrusel"
+            "footer"
+            ;
+            .header{
+                margin-top: 20px;
+                margin-bottom: 50px;
+                width: 100%;
+                .logoVariant1{
+                    display: none;
+            }
+            .navDesktop{
+                display: none;
+            }
+            .ulMobile{
+                display: none;
+            }
+            .navMobile{
+                width: fit-content;
+            }
+        }
+        .bienvenida{
+            text-align: center;
+            grid-area: bienvenida;
+            margin-top: 80px;
+            margin-bottom: 80px;
+            .bienvenidaCaja{
+                .bienvenidaSaludo{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    .bienvenidaSaludoEmoji{
+                        position: relative;
+                        bottom: 0px; left: 20px;
+                        animation-name: bienvenidaSaludoEmoji;
+                        animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+                        animation-duration: 1.5s;
+                        transform-origin: left bottom;
+                        @keyframes bienvenidaSaludoEmoji{
+                            0%{
+                                transform: scale(0.10);
+                                opacity: 0;
+                                transform: rotate(40deg);
+                            }
+                            100%{
+                                transform: rotate(deg);
+                            }
+                        }
+                    }
+                }
+                .bienvenidaDesc{
+                    padding-left: 3em;
+                    padding-right: 3em;
+                    h3{
+                        font-size: 1.5em;
+                    }
+                }
+                .bienvenidaButtonCaja{
+                    display: flex;
+                    justify-content: center;
+                    .bienvenidaButton{
+                        align-self: center;
+                        justify-content: center;
+                        align-content: center;
+                    }
+                }
+            }
+        }
+        .carrusel{
+            width: 100%;
+            .carruselGifDesktop{
+                margin: 2px auto;
+                display: none;
+            }
+        }
+        .footer{
+            margin-top: 50px;
+            margin-bottom: 20px;
+            .footerNav{
+                .navDesktop{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:480px){
+    .gridIndex{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "header"
+        "bienvenida"
+        "carrusel"
+        "footer"
+        ;
+        .header{
+            margin-top: 20px;
+            margin-bottom: 40px;
+            .logoVariant2{
+                transform: scale(0.7);
+            }
+            .menúMobile>img{
+                transform: scale(0.7);
+            }
+        }
+        .bienvenida{
+            text-align: center;
+            grid-area: bienvenida;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            .bienvenidaCaja{
+                >h1{
+                    font-size: 4em;
+                }
+                .bienvenidaSaludo{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    .bienvenidaSaludoEmoji{
+                        position: relative;
+                        bottom: 0px; left: 20px;
+                        animation-name: bienvenidaSaludoEmoji;
+                        animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+                        animation-duration: 1.5s;
+                        transform-origin: left bottom;
+                        @keyframes bienvenidaSaludoEmoji{
+                            0%{
+                                transform: scale(0.10);
+                                opacity: 0;
+                                transform: rotate(40deg);
+                            }
+                            100%{
+                                transform: rotate(deg);
+                            }
+                        }
+                    }
+                }
+                .bienvenidaDesc{
+                    padding-left: 1em;
+                    padding-right: 1em;
+                    h3{
+                        font-size: 1em;
+                    }
+                }
+                .bienvenidaButtonCaja{
+                    .bienvenidaButton{
+                        border-radius: 8px;
+                        padding: 10px 30px 10px 30px;
+                        a{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            margin-top: 50px;
+            margin-bottom: 20px;
+            .footerNav{
+                .logoVariant2{
+                    transform: scale(0.7);
+                }
+                .footerRedes{
+                    transform: scale(0.7);
+                }
+            }
+            .footerCopyright>h6{
+                font-size: 0.6em;
+            }
+        }
+    }
+}
