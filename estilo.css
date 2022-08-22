@@ -855,19 +855,6 @@ TERMINA EL MEDIA QUERIES DEL INDEX
 /********************************************
 EMPIEZA EL MEDIA QUERIES DEL PORTFOLIO
 *********************************************/
-@media screen and (max-width:1023px){
-    .cajasPortfolio{
-        display: block;
-    }
-    .cajasInfo{
-        width: 90%;
-        height: fit-content;
-    }
-    .cajasPortfolio{
-        padding: 2em;
-        border-radius: 46px;
-    }
-}
 @media screen and (max-width:1200px){
     .cajasPortfolioIMGa{
         padding: 4px;
@@ -888,6 +875,21 @@ EMPIEZA EL MEDIA QUERIES DEL PORTFOLIO
         font-size: 2rem;
     }
 }
+
+@media screen and (max-width:1023px){
+    .cajasPortfolio{
+        display: block;
+    }
+    .cajasInfo{
+        width: 90%;
+        height: fit-content;
+    }
+    .cajasPortfolio{
+        padding: 2em;
+        border-radius: 46px;
+    }
+}
+
 @media screen and (max-width:480px){
     .cajasPortfolioIMGa{
         padding: 4px;

@@ -197,3 +197,206 @@ EMPIEZA EL MEDIA QUERIES DE INDEX
         }
     }
 }
+/********************************************
+TERMINA EL MEDIA QUERIES DEL INDEX
+*********************************************/
+
+/********************************************
+EMPIEZA EL MEDIA QUERIES DEL PORTFOLIO
+*********************************************/
+@media screen and (max-width:1200px){
+    .bodyPortfolio{
+        .gridPortfolio{
+            display: grid;
+            align-content: flex-start;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 
+            "header"
+            "mainPortfolio"
+            "footer"
+            ;
+            .mainPortfolio{
+                grid-area: mainPortfolio;
+                display: block;
+                img{
+                    width: 100%;
+                }
+                .cajasPortfolio{
+                    border-radius: 3em;
+                    .cajasInfo h2{
+                        font-size: 2rem;
+                    }
+                    .cajasPortfolioIMG{
+                        .cajasPortfolioIMGprimario{
+                            .cajasPortfolioIMGa{
+                                padding: 4px;
+                            }
+                            .cajasPortfolioIMGsecundario{
+                                .cajasPortfolioIMGb{
+                                    padding: 4px;
+                                }
+                                .cajasPortfolioIMGterciario{
+                                    .cajasPortfolioIMGc{
+                                        padding: 4px;
+                                    }
+                                    .cajasPortfolioIMGd{
+                                        padding: 4px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1023px){
+    .bodyPortfolio{
+        .gridPortfolio{
+            display: grid;
+            align-content: flex-start;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 
+            "header"
+            "mainPortfolio"
+            "footer"
+            ;
+            .header{
+                margin-top: 20px;
+                margin-bottom: 50px;
+                width: 100%;
+                .logoVariant1{
+                    display: none;
+                }
+                .navDesktop{
+                    display: none;
+                }
+                .ulMobile{
+                    display: none;
+                }
+                .navMobile{
+                    width: fit-content;
+                }
+            }
+            .mainPortfolio{
+                grid-area: mainPortfolio;
+                display: block;
+                img{
+                    width: 100%;
+                }
+                .cajasPortfolio{
+                    display: block;
+                    padding: 2em;
+                    border-radius: 46px;
+                    .cajasInfo{
+                        width: 90%;
+                        height: fit-content;
+                    }
+                }
+            }
+            .footer{
+                margin-top: 50px;
+                margin-bottom: 20px;
+                .footerNav{
+                    .navDesktop{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:480px){
+    .bodyPortfolio{
+        .gridPortfolio{
+            display: grid;
+            align-content: flex-start;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 
+            "header"
+            "mainPortfolio"
+            "footer"
+            ;
+            .header{
+                margin-top: 20px;
+                margin-bottom: 40px;
+                .logoVariant2{
+                    transform: scale(0.7);
+                }
+                .menúMobile>img{
+                    transform: scale(0.7);
+                }
+            }
+            .mainPortfolio{
+                .cajasPortfolio{
+                    padding: 16px;
+                    border-radius: 18px;
+                    .cajasInfo{
+                        margin: 8px;
+                        h2{
+                            line-height: 2rem;
+                            font-size: 2em;
+                        }
+                        h3{
+                            font-size: 1.5em;
+                        }
+                        p{
+                            font-size: 1em;
+                        }
+                        .cajasInfoCaracteristicas{
+                            gap: 4px;
+                            flex-direction: row;
+                            margin: 0px 0px 8px 0px;
+                            div{
+                                font-size: 1rem;
+                                line-height: 1rem;
+                            }
+                            div div img {
+                                transform: scale(.8);
+                            }
+                        }
+                    }
+                    .cajasPortfolioIMG{
+                        .cajasPortfolioIMGprimario{
+                            .cajasPortfolioIMGa{
+                                padding: 4px;
+                            }
+                            .cajasPortfolioIMGsecundario{
+                                .cajasPortfolioIMGb{
+                                    padding: 4px;
+                                }
+                                .cajasPortfolioIMGterciario{
+                                    .cajasPortfolioIMGc{
+                                        padding: 4px;
+                                    }
+                                    .cajasPortfolioIMGd{
+                                        padding: 4px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer{
+                margin-top: 50px;
+                margin-bottom: 20px;
+                .footerNav{
+                    .logoVariant2{
+                        transform: scale(0.7);
+                    }
+                    .footerRedes{
+                        transform: scale(0.7);
+                    }
+                }
+                .footerCopyright>h6{
+                    font-size: 0.6em;
+                }
+            }
+        }
+    }
+}

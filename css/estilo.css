@@ -529,3 +529,124 @@ EMPIEZA EL MEDIA QUERIES DE INDEX
         transform: scale(0.7); }
       .gridIndex .footer .footerCopyright > h6 {
         font-size: 0.6em; } }
+
+/********************************************
+TERMINA EL MEDIA QUERIES DEL INDEX
+*********************************************/
+/********************************************
+EMPIEZA EL MEDIA QUERIES DEL PORTFOLIO
+*********************************************/
+@media screen and (max-width: 1200px) {
+  .bodyPortfolio .gridPortfolio {
+    display: grid;
+    align-content: flex-start;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header" "mainPortfolio" "footer"; }
+    .bodyPortfolio .gridPortfolio .mainPortfolio {
+      grid-area: mainPortfolio;
+      display: block; }
+      .bodyPortfolio .gridPortfolio .mainPortfolio img {
+        width: 100%; }
+      .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio {
+        border-radius: 3em; }
+        .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo h2 {
+          font-size: 2rem; }
+        .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasPortfolioIMG .cajasPortfolioIMGprimario .cajasPortfolioIMGa {
+          padding: 4px; }
+        .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasPortfolioIMG .cajasPortfolioIMGprimario .cajasPortfolioIMGsecundario .cajasPortfolioIMGb {
+          padding: 4px; }
+        .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasPortfolioIMG .cajasPortfolioIMGprimario .cajasPortfolioIMGsecundario .cajasPortfolioIMGterciario .cajasPortfolioIMGc {
+          padding: 4px; }
+        .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasPortfolioIMG .cajasPortfolioIMGprimario .cajasPortfolioIMGsecundario .cajasPortfolioIMGterciario .cajasPortfolioIMGd {
+          padding: 4px; } }
+
+@media screen and (max-width: 1023px) {
+  .bodyPortfolio .gridPortfolio {
+    display: grid;
+    align-content: flex-start;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header" "mainPortfolio" "footer"; }
+    .bodyPortfolio .gridPortfolio .header {
+      margin-top: 20px;
+      margin-bottom: 50px;
+      width: 100%; }
+      .bodyPortfolio .gridPortfolio .header .logoVariant1 {
+        display: none; }
+      .bodyPortfolio .gridPortfolio .header .navDesktop {
+        display: none; }
+      .bodyPortfolio .gridPortfolio .header .ulMobile {
+        display: none; }
+      .bodyPortfolio .gridPortfolio .header .navMobile {
+        width: fit-content; }
+    .bodyPortfolio .gridPortfolio .mainPortfolio {
+      grid-area: mainPortfolio;
+      display: block; }
+      .bodyPortfolio .gridPortfolio .mainPortfolio img {
+        width: 100%; }
+      .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio {
+        display: block;
+        padding: 2em;
+        border-radius: 46px; }
+        .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo {
+          width: 90%;
+          height: fit-content; }
+    .bodyPortfolio .gridPortfolio .footer {
+      margin-top: 50px;
+      margin-bottom: 20px; }
+      .bodyPortfolio .gridPortfolio .footer .footerNav .navDesktop {
+        display: none; } }
+
+@media screen and (max-width: 480px) {
+  .bodyPortfolio .gridPortfolio {
+    display: grid;
+    align-content: flex-start;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header" "mainPortfolio" "footer"; }
+    .bodyPortfolio .gridPortfolio .header {
+      margin-top: 20px;
+      margin-bottom: 40px; }
+      .bodyPortfolio .gridPortfolio .header .logoVariant2 {
+        transform: scale(0.7); }
+      .bodyPortfolio .gridPortfolio .header .menúMobile > img {
+        transform: scale(0.7); }
+    .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio {
+      padding: 16px;
+      border-radius: 18px; }
+      .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo {
+        margin: 8px; }
+        .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo h2 {
+          line-height: 2rem;
+          font-size: 2em; }
+        .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo h3 {
+          font-size: 1.5em; }
+        .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo p {
+          font-size: 1em; }
+        .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo .cajasInfoCaracteristicas {
+          gap: 4px;
+          flex-direction: row;
+          margin: 0px 0px 8px 0px; }
+          .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo .cajasInfoCaracteristicas div {
+            font-size: 1rem;
+            line-height: 1rem; }
+          .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo .cajasInfoCaracteristicas div div img {
+            transform: scale(0.8); }
+      .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasPortfolioIMG .cajasPortfolioIMGprimario .cajasPortfolioIMGa {
+        padding: 4px; }
+      .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasPortfolioIMG .cajasPortfolioIMGprimario .cajasPortfolioIMGsecundario .cajasPortfolioIMGb {
+        padding: 4px; }
+      .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasPortfolioIMG .cajasPortfolioIMGprimario .cajasPortfolioIMGsecundario .cajasPortfolioIMGterciario .cajasPortfolioIMGc {
+        padding: 4px; }
+      .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasPortfolioIMG .cajasPortfolioIMGprimario .cajasPortfolioIMGsecundario .cajasPortfolioIMGterciario .cajasPortfolioIMGd {
+        padding: 4px; }
+    .bodyPortfolio .gridPortfolio .footer {
+      margin-top: 50px;
+      margin-bottom: 20px; }
+      .bodyPortfolio .gridPortfolio .footer .footerNav .logoVariant2 {
+        transform: scale(0.7); }
+      .bodyPortfolio .gridPortfolio .footer .footerNav .footerRedes {
+        transform: scale(0.7); }
+      .bodyPortfolio .gridPortfolio .footer .footerCopyright > h6 {
+        font-size: 0.6em; } }
