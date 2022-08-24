@@ -394,6 +394,113 @@ ESTILO DEL PORTFOLIO
     opacity: 1; } }
 
 /********************************************
+ESTILO DE SERVICIOS
+*********************************************/
+.gridServicios {
+  display: grid;
+  align-content: flex-start;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "mainServicios" "footer"; }
+  .gridServicios .header {
+    grid-area: header;
+    width: 100%; }
+  .gridServicios .mainServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 200px;
+    grid-area: mainServicios; }
+    .gridServicios .mainServicios img {
+      width: 100%;
+      height: auto; }
+    .gridServicios .mainServicios .serviciosBorder {
+      width: 100%;
+      border-bottom: #B2F2FF solid 3px;
+      border-top: #B2F2FF solid 3px; }
+    .gridServicios .mainServicios .servicios {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      padding-left: 50px;
+      animation-delay: 0s;
+      animation-duration: 1.5s;
+      animation-timing-function: cubic-bezier(0.78, 0.1, 0.24, 0.9);
+      animation-name: servicios; }
+
+@keyframes servicios {
+  0% {
+    opacity: 0;
+    margin-top: 100px; }
+  100% {
+    opacity: 1; } }
+      .gridServicios .mainServicios .servicios .cajaServicios {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto; }
+        .gridServicios .mainServicios .servicios .cajaServicios .cajaServicioSvg {
+          width: auto;
+          height: auto;
+          margin-left: 2rem;
+          margin-right: 2rem; }
+        .gridServicios .mainServicios .servicios .cajaServicios .cajaServicioTexto {
+          width: 53rem;
+          height: auto;
+          margin-left: 2rem;
+          margin-right: 2rem; }
+          .gridServicios .mainServicios .servicios .cajaServicios .cajaServicioTexto label div #cajaServicioDesc {
+            font-family: 'Kanit', sans-serif;
+            font-weight: 100;
+            font-size: 24px;
+            width: 90%;
+            line-height: 1.8rem;
+            color: #00D2FF;
+            overflow: hidden;
+            max-height: 0;
+            transition: all 1s;
+            animation-timing-function: cubic-bezier(0.91, -0.56, 0.37, 1.65);
+            animation-duration: 2s; }
+          .gridServicios .mainServicios .servicios .cajaServicios .cajaServicioTexto #btnDiseño {
+            display: none; }
+            .gridServicios .mainServicios .servicios .cajaServicios .cajaServicioTexto #btnDiseño:checked + label > div div {
+              overflow: hidden;
+              max-height: 200px;
+              transition: all 1s;
+              animation-timing-function: cubic-bezier(0.91, -0.56, 0.37, 1.65);
+              animation-duration: 2s; }
+          .gridServicios .mainServicios .servicios .cajaServicios .cajaServicioTexto #btnRrss {
+            display: none; }
+            .gridServicios .mainServicios .servicios .cajaServicios .cajaServicioTexto #btnRrss:checked + label > div div {
+              overflow: hidden;
+              max-height: 200px;
+              transition: all 1s;
+              animation-timing-function: cubic-bezier(0.91, -0.56, 0.37, 1.65);
+              animation-duration: 2s; }
+          .gridServicios .mainServicios .servicios .cajaServicios .cajaServicioTexto #btnWeb {
+            display: none; }
+            .gridServicios .mainServicios .servicios .cajaServicios .cajaServicioTexto #btnWeb:checked + label > div div {
+              overflow: hidden;
+              max-height: 200px;
+              transition: all 1s;
+              animation-timing-function: cubic-bezier(0.91, -0.56, 0.37, 1.65);
+              animation-duration: 2s; }
+        .gridServicios .mainServicios .servicios .cajaServicios .cajaServicioMas {
+          align-items: flex-start;
+          width: 40px;
+          height: 100%;
+          margin-left: 2rem; }
+          .gridServicios .mainServicios .servicios .cajaServicios .cajaServicioMas .cajaServicioLeerMas {
+            align-items: flex-start;
+            width: fit-content;
+            height: fit-content; }
+
+/********************************************
 EMPIEZA EL MEDIA QUERIES DE INDEX
 *********************************************/
 @media screen and (min-width: 1024px) {
