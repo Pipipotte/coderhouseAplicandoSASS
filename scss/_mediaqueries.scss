@@ -400,3 +400,385 @@ EMPIEZA EL MEDIA QUERIES DEL PORTFOLIO
         }
     }
 }
+
+/********************************************
+EMPIEZA EL MEDIA QUERIES DE SERVICIOS
+*********************************************/
+@media screen and (max-width:1200px){
+    .gridServicios{
+        .mainServicios{
+            .servicios{
+                .cajaServicios{
+                    .cajaServicioTexto{
+                        h2{
+                            font-size: 2.2em;
+                        }
+                        h3{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1024px){
+    .gridServicios{
+        .mainServicios{
+            .servicios{
+                .cajaServicios{
+                    .cajaServicioMas{
+                        visibility: hidden;
+                    }
+                }
+                .cajaServicioTexto{
+                    h2{
+                        font-size: 2.2em;
+                    }
+                    h3{
+                        font-size: 1.5em;
+                    }
+                    .cajaServicioLeerMas{
+                        margin-top: 20px;
+                        p{
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 1em;
+                            font-size: 2em;
+                            font-variant: small-caps;
+                            font-weight: 700;
+                            color: #00D2FF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1023px){
+    .gridServicios{
+        .header{
+            margin-top: 20px;
+            margin-bottom: 50px;
+            width: 100%;
+            .logoVariant1{
+                display: none;
+            }
+            .navDesktop{
+                display: none;
+            }
+            .ulMobile{
+                display: none;
+            }
+            .navMobile{
+                width: fit-content;
+            }
+        }
+        .mainServicios{
+            margin-top: 2em;
+            .servicios{
+                padding-top: 60px;
+                padding-bottom: 60px;
+                padding-left: 0px;
+                .cajaServicios{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    width: fit-content;
+                    .cajaServicioMas{
+                        display: none;
+                    }
+                    .cajaServicioSvg{
+                        justify-content: center;
+                        width: 8.2em;
+                        img{
+                            width: 100%;
+                            margin-bottom: 1em;
+                        }
+                    }
+                    .cajaServicioTexto{
+                        justify-content: center;
+                        width: 100%;
+                        label div{
+                            #cajaServicioDesc{
+                                justify-content: center;
+                                padding-top: 0.4em;
+                                padding-left: 3em;
+                                padding-right: 3em;
+                                margin-left: auto;
+                                margin-right: auto;
+                                font-family: 'Kanit', sans-serif;
+                                font-weight: 100;
+                                font-size: 1rem;
+                                width: 90%;
+                                line-height: 1.2rem;
+                                color: #00D2FF;
+                                overflow: hidden;
+                                max-height: 0;
+                                transition: all 1s;
+                                animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+                                animation-duration: 2s;
+                            }
+                        }
+                        h2{
+                            font-size: 2.2em;
+                            line-height: 1em;
+                        }
+                        h3{
+                            padding-top: 0.4em;
+                            padding-left: 3em;
+                            padding-right: 3em;
+                            font-size: 1.5em;
+                            line-height: 1.2em;
+                        }
+                        .cajaServicioLeerMas{
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: fit-content;
+                            p{
+                                margin-top: 1em;
+                                font-size: 2em;
+                                font-variant: small-caps;
+                                font-weight: 700;
+                                color: #00D2FF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            margin-top: 50px;
+            margin-bottom: 20px;
+            .footerNav{
+                .navDesktop{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:480px){
+    .gridServicios{
+        .header{
+            margin-top: 20px;
+            margin-bottom: 40px;
+            .logoVariant2{
+                transform: scale(0.7);
+            }
+            .menúMobile>img{
+                transform: scale(0.7);
+            }
+        }
+        .mainServicios{
+            .servicios{
+                .cajaServicios{
+                    .cajaServicioSvg{
+                        justify-content: center;
+                        width: 5em;
+                        img{
+                            width: 100%;
+                            margin-bottom: 1em;
+                        }
+                    }
+                    .cajaServicioTexto{
+                        justify-content: center;
+                        width: 100%;
+                        label div{
+                            #cajaServicioDesc{
+                                justify-content: center;
+                                padding-top: 1em;
+                                padding-left: 1em;
+                                padding-right: 1em;
+                                margin-left: auto;
+                                margin-right: auto;
+                                font-family: 'Kanit', sans-serif;
+                                font-weight: 100;
+                                font-size: 1rem;
+                                width: 100%;
+                                line-height: 1.2rem;
+                                color: #00D2FF;
+                                overflow: hidden;
+                                max-height: 0;
+                                transition: all 1s;
+                                animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+                                animation-duration: 2s;
+                            }
+                        }
+                        h2{
+                            font-size: 1.2em;
+                            line-height: 1em;
+                        }
+                        h3{
+                            padding-top: 0.5em;
+                            padding-left: 1em;
+                            padding-right: 1em;
+                            font-size: 1em;
+                            line-height: 1em;
+                        }
+                        .cajaServicioLeerMas{
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: fit-content;
+                            p{
+                                margin-top: 0.5em;
+                                font-size: 1.5em;
+                                font-variant: small-caps;
+                                font-weight: 700;
+                                color: #00D2FF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            margin-top: 50px;
+            margin-bottom: 20px;
+            .footerNav{
+                .logoVariant2{
+                    transform: scale(0.7);
+                }
+                .footerRedes{
+                    transform: scale(0.7);
+                }
+            }
+            .footerCopyright>h6{
+                font-size: 0.6em;
+            }
+        }
+    }
+}
+/********************************************
+TERMINA EL MEDIA QUERIES DEL SERVICIOS
+*********************************************/
+/********************************************
+EMPIEZA EL MEDIA QUERIES DE NOSOTROS
+*********************************************/
+@media screen and (max-width:1023px){
+    .gridNosotros{
+        .header{
+            margin-top: 20px;
+            margin-bottom: 50px;
+            width: 100%;
+            .logoVariant1{
+                display: none;
+            }
+            .navDesktop{
+                display: none;
+            }
+            .ulMobile{
+                display: none;
+            }
+            .navMobile{
+                width: fit-content;
+            }
+        }
+        .footer{
+            margin-top: 50px;
+            margin-bottom: 20px;
+            .footerNav{
+                .navDesktop{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:480px){
+    .gridNosotros{
+        .header{
+            margin-top: 20px;
+            margin-bottom: 40px;
+            .logoVariant2{
+                transform: scale(0.7);
+            }
+            .menúMobile>img{
+                transform: scale(0.7);
+            }
+        }
+        .footer{
+            margin-top: 50px;
+            margin-bottom: 20px;
+            .footerNav{
+                .logoVariant2{
+                    transform: scale(0.7);
+                }
+                .footerRedes{
+                    transform: scale(0.7);
+                }
+            }
+            .footerCopyright>h6{
+                font-size: 0.6em;
+            }
+        }
+    }
+}
+/********************************************
+TERMINA EL MEDIA QUERIES DE NOSOTROS
+*********************************************/
+/********************************************
+EMPIEZA EL MEDIA QUERIES DE CONTACTO
+*********************************************/
+@media screen and (max-width:1023px){
+    .gridContacto{
+        .header{
+            margin-top: 20px;
+            margin-bottom: 50px;
+            width: 100%;
+            .logoVariant1{
+                display: none;
+            }
+            .navDesktop{
+                display: none;
+            }
+            .ulMobile{
+                display: none;
+            }
+            .navMobile{
+                width: fit-content;
+            }
+        }
+        .footer{
+            margin-top: 50px;
+            margin-bottom: 20px;
+            .footerNav{
+                .navDesktop{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:480px){
+    .gridContacto{
+        .header{
+            margin-top: 20px;
+            margin-bottom: 40px;
+            .logoVariant2{
+                transform: scale(0.7);
+            }
+            .menúMobile>img{
+                transform: scale(0.7);
+            }
+        }
+        .footer{
+            margin-top: 50px;
+            margin-bottom: 20px;
+            .footerNav{
+                .logoVariant2{
+                    transform: scale(0.7);
+                }
+                .footerRedes{
+                    transform: scale(0.7);
+                }
+            }
+            .footerCopyright>h6{
+                font-size: 0.6em;
+            }
+        }
+    }
+}
