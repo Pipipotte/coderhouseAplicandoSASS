@@ -19,19 +19,19 @@ ESTILO DE CONTACTO
                 ul{
                     li{
                         a{
-                            color: #4B6D85;
+                            color: $azul_dark;
                             &:focus{
                                 font-family: 'Epilogue', sans-serif;
                                 font-weight: 800;
-                                color: #4B6D85;
+                                color: $azul_dark;
                             }
                             &:active{
-                                color: #4B6D85;
+                                color: $azul_dark;
                                 font-weight: 800;
                             }
                         }
                         &.navContacto{
-                            background-color: #B2F2FF;
+                            background-color: $celeste_light;
                             font-weight: 900;
                             line-height: 1;
                             border-radius: 6px;
@@ -41,7 +41,7 @@ ESTILO DE CONTACTO
                             animation-name: navContacto;
                             @keyframes navContacto {
                                 0% {background-color: white;}
-                                100% {background-color: #B2F2FF;}
+                                100% {background-color: $celeste_light;}
                             }
                         }
                     }
@@ -68,7 +68,7 @@ ESTILO DE CONTACTO
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    border: #E9FBFF solid 12px;
+                    border: $celeste_light3 solid 12px;
                     border-radius: 5%;
                     padding: 20px;
                     .fieldsetLegend{
@@ -76,7 +76,7 @@ ESTILO DE CONTACTO
                         text-align: center;
                         font-size: 20px;
                         font-weight: 400;
-                        color: #4B6D85;
+                        color: $azul_dark;
                         font-family: 'Epilogue', sans-serif;
                     }
                     .divForm1{
@@ -87,7 +87,7 @@ ESTILO DE CONTACTO
                         justify-content: center;
                         gap: 2px;
                         font-family: 'Kanit', sans-serif;
-                        color: #4B6D85;
+                        color: $azul_dark;
                     }
                     .divForm2{
                         padding: 10px 0px 10px 0px;
@@ -97,16 +97,16 @@ ESTILO DE CONTACTO
                         justify-content: center;
                         gap: 2px;
                         font-family: 'Epilogue', sans-serif;
-                        color: #4B6D85;
+                        color: $azul_dark;
                         #tipodecliente{
                             padding: 0px 10px 0px 10px;
                             font-size: 20px;
                             text-align: center;
                             width: 100%;
-                            background-color: #D3F8FF; 
-                            border: #D3F8FF solid 2px;
+                            background-color: $celeste_light2; 
+                            border: $celeste_light2 solid 2px;
                             font-family: 'Kanit', sans-serif;
-                            color: #4B6D85;
+                            color: $azul_dark;
                         }
                         .divForm2Option{
                             font-weight: 100;
@@ -123,18 +123,18 @@ ESTILO DE CONTACTO
                         justify-content: center;
                         gap: 2px;
                         font-family: 'Kanit', sans-serif;
-                        color: #4B6D85;
+                        color: $azul_dark;
                         input{
                             font-size: 20px;
                             text-align: center;
                             padding: 2px 8px 2px 8px;
-                            background-color: #D3F8FF; 
-                            border: #D3F8FF solid 2px;
+                            background-color: $celeste_light2; 
+                            border: $celeste_light2 solid 2px;
                             border-radius: 8px;
                             font-family: 'Kanit', sans-serif;
-                            color: #4B6D85;
+                            color: $azul_dark;
                             &::placeholder{
-                                color: #4B6D85;
+                                color: $azul_dark;
                             }
                         }
                     }
@@ -149,13 +149,13 @@ ESTILO DE CONTACTO
                             width: 60%;
                             text-align: center;
                             font-family: 'Kanit', sans-serif;
-                            color: #4B6D85;
+                            color: $azul_dark;
                             line-height: 16px;
                         }
                         textarea{
                             padding: 10px 0px 0px 20px;
-                            background-color: #D3F8FF; 
-                            border: #D3F8FF solid 2px;
+                            background-color: $celeste_light2; 
+                            border: $celeste_light2 solid 2px;
                             border-radius: 16px;
                             font-family: 'Kanit', sans-serif;
                             resize: none;
@@ -180,8 +180,8 @@ ESTILO DE CONTACTO
                             font-weight: 800;
                             letter-spacing: 1.5px;
                             color: white;
-                            background-color: #00D2FF;
-                            border: #00D2FF solid 2px;
+                            background-color: $celeste;
+                            border: $celeste solid 2px;
                             border-radius: 10px;
                         }
                         input[type=reset]{

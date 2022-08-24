@@ -1,3 +1,23 @@
+$azul_dark: #4B6D85;
+$celeste: #00D2FF;
+$celeste_light: #B2F2FF;
+$celeste_light2: #D3F8FF;
+$celeste_light3: #E9FBFF;
+@mixin footerMQ480 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    .footerNav{
+        .logoVariant2{
+            transform: scale(0.7);
+        }
+        .footerRedes{
+            transform: scale(0.7);
+        }
+    }
+    .footerCopyright>h6{
+        font-size: 0.6em;
+    }
+}
 @import "general";
 @import "header";
 @import "footer";

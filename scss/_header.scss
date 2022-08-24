@@ -11,7 +11,7 @@ header{
         font-family: 'Epilogue', sans-serif;
         font-size: 16px;
         letter-spacing: 4%;
-        color: #4B6D85;
+        color: $azul_dark;
         .logoVariant2{
             width: 100px;
             margin-right: 40px;
@@ -41,14 +41,14 @@ header{
                         animation-duration: 1s;
                     }
                     a{
-                        color: #4B6D85;
+                        color: $azul_dark;
                         &:focus{
                             font-family: 'Epilogue', sans-serif;
                             font-weight: 800;
-                            color: #4B6D85;
+                            color: $azul_dark;
                         }
                         &:active{
-                            color: #4B6D85;
+                            color: $azul_dark;
                             font-weight: 800;
                         }
                     }

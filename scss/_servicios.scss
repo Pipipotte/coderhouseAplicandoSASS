@@ -19,19 +19,19 @@ ESTILO DE SERVICIOS
                 ul{
                     li{
                         a{
-                            color: #4B6D85;
+                            color: $azul_dark;
                             &:focus{
                                 font-family: 'Epilogue', sans-serif;
                                 font-weight: 800;
-                                color: #4B6D85;
+                                color: $azul_dark;
                             }
                             &:active{
-                                color: #4B6D85;
+                                color: $azul_dark;
                                 font-weight: 800;
                             }
                         }
                         &.navServicios{
-                            background-color: #B2F2FF;
+                            background-color: $celeste_light;
                             font-weight: 900;
                             line-height: 1;
                             border-radius: 6px;
@@ -41,7 +41,7 @@ ESTILO DE SERVICIOS
                             animation-name: navServicios;
                             @keyframes navServicios {
                                 0% {background-color: white;}
-                                100% {background-color: #B2F2FF;}
+                                100% {background-color: $celeste_light;}
                             }
                         }
                     }
@@ -63,8 +63,8 @@ ESTILO DE SERVICIOS
         }
         .serviciosBorder{
             width: 100%;
-            border-bottom: #B2F2FF solid 3px;
-            border-top: #B2F2FF solid 3px;
+            border-bottom: $celeste_light solid 3px;
+            border-top: $celeste_light solid 3px;
         }
         .servicios{
             display: flex;
@@ -111,7 +111,7 @@ ESTILO DE SERVICIOS
                             font-size: 24px;
                             width: 90%;
                             line-height: 1.8rem;
-                            color: #00D2FF;
+                            color: $celeste;
                             overflow: hidden;
                             max-height: 0;
                             transition: all 1s;

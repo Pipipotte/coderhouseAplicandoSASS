@@ -20,19 +20,19 @@ ESTILO DEL PORTFOLIO
                     ul{
                         li{
                             a{
-                                color: #4B6D85;
+                                color: $azul_dark;
                                 &:focus{
                                     font-family: 'Epilogue', sans-serif;
                                     font-weight: 800;
-                                    color: #4B6D85;
+                                    color: $azul_dark;
                                 }
                                 &:active{
-                                    color: #4B6D85;
+                                    color: $azul_dark;
                                     font-weight: 800;
                                 }
                             }
                             &.navPortfolio{
-                                background-color: #B2F2FF;
+                                background-color: $celeste_light;
                                 font-weight: 900;
                                 line-height: 1;
                                 border-radius: 6px;
@@ -42,7 +42,7 @@ ESTILO DEL PORTFOLIO
                                 animation-name: navPortfolio;
                                 @keyframes navPortfolio {
                                     0% {background-color: white;}
-                                    100% {background-color: #B2F2FF;}
+                                    100% {background-color: $celeste_light;}
                                 }
                             }
                         }

@@ -181,19 +181,7 @@ EMPIEZA EL MEDIA QUERIES DE INDEX
             }
         }
         .footer{
-            margin-top: 50px;
-            margin-bottom: 20px;
-            .footerNav{
-                .logoVariant2{
-                    transform: scale(0.7);
-                }
-                .footerRedes{
-                    transform: scale(0.7);
-                }
-            }
-            .footerCopyright>h6{
-                font-size: 0.6em;
-            }
+            @include footerMQ480
         }
     }
 }
@@ -383,19 +371,7 @@ EMPIEZA EL MEDIA QUERIES DEL PORTFOLIO
                 }
             }
             .footer{
-                margin-top: 50px;
-                margin-bottom: 20px;
-                .footerNav{
-                    .logoVariant2{
-                        transform: scale(0.7);
-                    }
-                    .footerRedes{
-                        transform: scale(0.7);
-                    }
-                }
-                .footerCopyright>h6{
-                    font-size: 0.6em;
-                }
+                @include footerMQ480
             }
         }
     }
@@ -636,19 +612,7 @@ EMPIEZA EL MEDIA QUERIES DE SERVICIOS
             }
         }
         .footer{
-            margin-top: 50px;
-            margin-bottom: 20px;
-            .footerNav{
-                .logoVariant2{
-                    transform: scale(0.7);
-                }
-                .footerRedes{
-                    transform: scale(0.7);
-                }
-            }
-            .footerCopyright>h6{
-                font-size: 0.6em;
-            }
+            @include footerMQ480
         }
     }
 }
@@ -766,19 +730,7 @@ EMPIEZA EL MEDIA QUERIES DE CONTACTO
             }
         }
         .footer{
-            margin-top: 50px;
-            margin-bottom: 20px;
-            .footerNav{
-                .logoVariant2{
-                    transform: scale(0.7);
-                }
-                .footerRedes{
-                    transform: scale(0.7);
-                }
-            }
-            .footerCopyright>h6{
-                font-size: 0.6em;
-            }
+            @include footerMQ480
         }
     }
 }
